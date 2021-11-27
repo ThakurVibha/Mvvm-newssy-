@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_color">
+
+    <include
+        android:id="@+id/mainToolbar"
+        layout="@layout/main_toolbar" />
+
+
+    <TextView
+        android:id="@+id/tvMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/bevietnam_bold"
+        android:text="@string/main_text"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/mainToolbar"
+        app:layout_constraintStart_toStartOf="@+id/mainToolbar"
+        app:layout_constraintTop_toBottomOf="@+id/mainToolbar" />
+
+    <EditText
+        android:id="@+id/edtInput"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/search_background"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableEnd="@drawable/ic_baseline_mic_24"
+        android:fontFamily="@font/bevietnam_regular"
+        android:hint="Search"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textColorHint="#959494"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/ivDone"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMain" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvNews"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtInput"
+            tools:listitem="@layout/news_item" />
+
+    <ImageView
+        android:id="@+id/ivDone"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edtInput"
+        app:layout_constraintStart_toEndOf="@+id/edtInput"
+        app:layout_constraintTop_toTopOf="@+id/edtInput"
+        app:srcCompat="@drawable/ic_baseline_done_24" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

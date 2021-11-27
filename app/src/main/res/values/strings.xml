@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Newssy</string>
+    <string name="search_your_itch_or_speak">Search your itch or speak</string>
+    <string name="main_text">Search your itch</string>
+</resources>
