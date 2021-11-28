@@ -1,8 +1,7 @@
-package com.example.newssy.data
+package com.example.newssy.data.topheadlines
 
-
-data class News(
-    val author: String,
+data class Article(
+    val author: Any,
     val content: String,
     val description: String,
     val publishedAt: String,

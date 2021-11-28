@@ -1,4 +1,4 @@
-package com.example.newssy.data
+package com.example.newssy.data.allnews
 
 data class Article(
     val articles: ArrayList<News>,

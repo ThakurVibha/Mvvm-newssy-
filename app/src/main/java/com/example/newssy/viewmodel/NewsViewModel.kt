@@ -3,7 +3,8 @@ package com.example.newssy.viewmodel
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
-import com.example.newssy.data.Article
+import com.example.newssy.data.allnews.Article
+import com.example.newssy.data.topheadlines.TopHeadlines
 import com.example.newssy.repository.NewsRepository
 
 class NewsViewModel( application: Application):AndroidViewModel(application) {
@@ -20,5 +21,13 @@ class NewsViewModel( application: Application):AndroidViewModel(application) {
 
     fun failureData():MutableLiveData<String>{
         return newsRepository.mFailureData
+    }
+
+    fun fetchTopHeadlines() {
+        newsRepository.fetchTopHeadlinesData()
+    }
+
+    fun successHeadlinesData():MutableLiveData<TopHeadlines>{
+        return newsRepository.mSuccessHeadLines
     }
 }
