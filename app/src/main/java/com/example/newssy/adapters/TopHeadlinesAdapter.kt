@@ -8,10 +8,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.newssy.R
 import com.example.newssy.data.topheadlines.Article
+import com.example.newssy.data.topheadlines.Source
 import kotlinx.android.synthetic.main.trending_item.view.*
 
 class TopHeadlinesAdapter(var context: Context, var topHeadlinesList: List<Article>) :
     RecyclerView.Adapter<TopHeadlinesViewHolder>() {
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TopHeadlinesViewHolder {
         var view =
             LayoutInflater.from(parent.context).inflate(R.layout.trending_item, parent, false)
@@ -20,6 +22,7 @@ class TopHeadlinesAdapter(var context: Context, var topHeadlinesList: List<Artic
 
     override fun onBindViewHolder(holder: TopHeadlinesViewHolder, position: Int) {
         var headlineList: Article = topHeadlinesList[position]
+        holder.itemView.tvHeadline.text=headlineList.source.name
         Glide
             .with(context)
             .load(headlineList.urlToImage)

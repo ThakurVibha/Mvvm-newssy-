@@ -2,6 +2,7 @@ package com.example.newssy.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
@@ -22,13 +23,18 @@ class NewsActivity : AppCompatActivity() {
         initViewModel()
         initApi()
         setObserver()
+        ivMakeSearch.visibility = View.VISIBLE
     }
 
     private fun initApi() {
         ivSearch.setOnClickListener {
-            newsViewModel.fetchNewsData(edtInput.text.toString())
             if (edtInput.text.toString().isEmpty()) {
-                edtInput.error = "Enter some topic"
+                edtInput.error = "Enter some keyword to search"
+            } else {
+                ivMakeSearch.visibility = View.GONE
+                Toast.makeText(this, "Here you go (: ", Toast.LENGTH_SHORT).show()
+                newsViewModel.fetchNewsData(edtInput.text.toString())
+
             }
         }
 

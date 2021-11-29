@@ -4,13 +4,14 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/drawable/detail_layout_bg.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/drawable/headlines_bg.xml" value="0.18693693693693694" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/drawable/search_background.xml" value="0.15462962962962962" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/layout/activity_detail_fragment.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/layout/activity_main.xml" value="0.15298804780876493" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/layout/main_toolbar.xml" value="0.33" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/layout/news_item.xml" value="0.2" />
-        <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/layout/trending_item.xml" value="0.17297297297297298" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/layout/trending_item.xml" value="0.33" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/menu/main_menu.xml" value="0.2" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/Newssy/app/src/main/res/menu/news_menu.xml" value="0.2" />
       </map>
